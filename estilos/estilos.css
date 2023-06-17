@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(85, 85, 85,1);
+}
+
+h1{
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: red;
+  font-size: 45px;
+  text-shadow:  0 10px #000000;
+}
+
+p{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 0px 0px 5px white;
+}
+
+.contenedor-video {
+  position: relative;
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 (divide la altura por el ancho y multiplica por 100) */
+}
+
+.contenedor-video video {
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+}
+
+.contenedor-galeria{
+  display: grid;
+  align-items: center;
+  width: 70%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.img{
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  border: solid 2px rgb(19, 8, 8);
+
+}
+
+.img1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-size: cover;
+}
+.img2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-size: cover;
+}
+.img3{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-size: cover;
+}
+.img4{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-size: cover;
+}
